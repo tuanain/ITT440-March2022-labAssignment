@@ -5,7 +5,6 @@
 #include <unistd.h>
 
 void childTask()
-
 {
 	printf("salam, i'm a child");
 }
@@ -16,9 +15,10 @@ void parentTask()
 int main (void)
 {
 	pid_t pid = fork();
-	if (pid == fork();
+	if (pid == fork())
+{
 	childTask();
-	exit(EXIT_SUCCES);
+	exit(EXIT_SUCCESS);
 }
 	else if(pid > 0)
 {
@@ -29,5 +29,5 @@ int main (void)
 {
 	printf("unable to create child process\n");
 }
-	return EXIT_SUCCES;
+	return EXIT_SUCCESS;
 }

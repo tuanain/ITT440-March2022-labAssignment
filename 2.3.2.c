@@ -16,7 +16,7 @@ int main(void)
 }
 	else
 {
-	printf("parent process => PID=%d\n"), getpid());
+	printf("parent process => PID=%d\n", getpid());
 	printf("waiting for child process to finish...\n");
 	wait(NULL);
 	printf("child process finished.\n");

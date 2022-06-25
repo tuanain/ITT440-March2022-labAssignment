@@ -7,7 +7,7 @@ int main(int argc , char *argv[])
 {
 	int socket_desc;
 	struct sockaddr_in server;
-	char *message , server_reply[2000];
+	char *message , server_reply[8888];
 	
 	//Create socket
 	socket_desc = socket(AF_INET , SOCK_STREAM , 0);
@@ -38,7 +38,7 @@ int main(int argc , char *argv[])
 	}
 	puts("Data Send\n");
                     //Receive a reply from the server
-	if( recv(socket_desc, server_reply , 2000 , 0) < 0)
+	if( recv(socket_desc, server_reply , 8888 , 0) < 0)
 	{
 		puts("recv failed");
 	}
